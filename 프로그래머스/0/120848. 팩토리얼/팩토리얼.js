@@ -1,5 +1,5 @@
 function solution(n) {
-    let answer = 0;
+    let answer;
     let result = 1;
     for (let i = 1; i <= n; i++) {
         result *= i;
