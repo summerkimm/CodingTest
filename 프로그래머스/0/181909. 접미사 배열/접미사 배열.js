@@ -4,6 +4,5 @@ function solution(my_string) {
         let word = my_string.slice(i);
         answer.push(word);
     }
-    answer.sort();
-    return answer;
+    return answer.sort();
 }
