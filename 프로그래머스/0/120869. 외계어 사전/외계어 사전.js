@@ -1,11 +1,13 @@
 function solution(spell, dic) {
-    var answer = 0;
-    let a = spell.sort().toString();
-    console.log(a);
-    for(let i = 0; i < dic.length; i++) {
-        let word = dic[i].split('').sort().toString();
-        console.log(word);
-        if(a === word) {return answer = 1} else {answer = 2;}
+  let answer = 0;
+  let word1 = spell.sort().toString();
+  for (let i = 0; i < dic.length; i++) {
+    let word2 = dic[i].split("").sort().toString();
+    if (word1 === word2) {
+      return (answer = 1);
+    } else {
+      answer = 2;
     }
-    return answer;
+  }
+  return answer;
 }
