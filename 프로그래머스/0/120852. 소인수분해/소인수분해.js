@@ -7,7 +7,6 @@ function solution(n) {
            arr.push(i);
         }
     }  
-    let answer = arr.filter((el, idx) =>{ return arr.indexOf(el) === idx});
-    console.log(answer);
-    return answer;
+    
+    return answer = arr.filter((el, idx) => arr.indexOf(el) === idx);
 }
