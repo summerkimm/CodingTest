@@ -1,12 +1,11 @@
 function solution(n) {
-  let arr = [];
-
-  for (let i = 2; i <= n; i++) {
-    while (n % i === 0) {
-      n = n / i;
-      arr.push(i);
+    let answer = [];
+    
+    for(let i = 2; i <= n; i++) {
+        while (n % i === 0) {
+            answer.push(i);
+            n /= i
+        }
     }
-  }
-
-  return (answer = arr.filter((el, idx) => arr.indexOf(el) === idx));
+    return answer.filter((val, idx) => answer.indexOf(val) === idx);
 }
