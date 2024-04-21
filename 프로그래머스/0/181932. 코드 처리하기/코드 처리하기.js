@@ -14,7 +14,7 @@ function solution(code) {
             } 
             if(code[i] === '1') mode = 0;
         }
-        }
-        return ret == [] ? "EMPTY" : ret;
+    }
+    return ret == [] ? "EMPTY" : ret;
 
 }
