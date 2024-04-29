@@ -11,12 +11,9 @@ function solution(k, score) {
             if (score[i] > stack[0]) {
                 stack.shift(stack[0]);
                 stack.push(score[i]);
-                stack.sort((a, b) => a - b);
-                answer.push(stack[0]); 
-            } else {
-                stack.sort((a, b) => a - b);
-                answer.push(stack[0]); 
-            }
+            } 
+            stack.sort((a, b) => a - b);
+            answer.push(stack[0]); 
         }
     }
     return answer;
