@@ -13,7 +13,6 @@ function solution(nums) {
                         break;
                     }
                 }
-                // console.log(answer);
             }
         }
     }
