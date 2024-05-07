@@ -5,7 +5,6 @@ function solution(number, limit, power) {
       let count = 0;
       for(let j = 1; j <= Math.sqrt(i); j++) {
           if(i % j === 0) {
-              // count++;
               (i / j !== j) ? count += 2 : count += 1
           }
       }
