@@ -1,8 +1,7 @@
 function solution(n) {
-    var answer = 0;
+    let answer = 0;
     const prime = [];
     const arr = Array(n).fill(0);
-    
     
     for(let i = 2; i <= n; i++){
         arr[i] = i;
